@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Grade 4 Math Contest Practice</title>
+<meta name="description" content="Four 25-question practice contests for the Grade 4 InSpire Canada Math Contest, with instant marking, a score tower and sounds.">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Math Quiz">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" href="data:image/png;base64,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">
+<style>
+/* ---------- base ---------- */
+* { box-sizing: border-box; -webkit-tap-highlight-color: rgba(0,0,0,0); }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; min-height: 100%;
+  background: #f4f7f6;
+  background-image: -webkit-radial-gradient(10% 0%, rgba(43,106,98,0.10), rgba(43,106,98,0) 55%), -webkit-radial-gradient(100% 100%, rgba(245,166,35,0.14), rgba(245,166,35,0) 50%);
+  background-image: radial-gradient(at 10% 0%, rgba(43,106,98,0.10), rgba(43,106,98,0) 55%), radial-gradient(at 100% 100%, rgba(245,166,35,0.14), rgba(245,166,35,0) 50%);
+  color: #17313a;
+  font-family: "Avenir Next", Avenir, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px; line-height: 1.45;
+}
+h1, h2, h3 { margin: 0; line-height: 1.15; font-weight: 800; }
+button { font-family: inherit; font-size: inherit; cursor: pointer; }
+button:focus { outline: none; }
+.btn-focus { box-shadow: 0 0 0 4px rgba(245,166,35,0.55) !important; }
+.hidden { display: none !important; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ---------- menu ---------- */
+.hero { text-align: center; padding: 26px 0 10px; }
+.hero .kicker { display: inline-block; background: #17313a; color: #fff; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; font-weight: 700; padding: 6px 12px; border-radius: 999px; }
+.hero h1 { font-size: 44px; margin: 16px 0 8px; color: #17313a; letter-spacing: -0.5px; }
+.hero h1 span { color: #2b6a62; }
+.hero p { margin: 0 auto; max-width: 520px; font-size: 20px; color: #3f5a60; }
+.cards { margin: 30px 0 10px; }
+.card {
+  display: block; width: 100%; text-align: left; position: relative;
+  background: #fff; border: 2px solid #d8e3e1; border-radius: 18px;
+  padding: 18px 20px 18px 92px; margin: 0 0 14px; min-height: 96px;
+  box-shadow: 0 2px 0 #d8e3e1, 0 10px 24px rgba(23,49,58,0.06);
+  -webkit-transition: -webkit-transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+  transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+}
+.card:hover, .card.btn-focus { -webkit-transform: translateY(-2px); transform: translateY(-2px); border-color: #2b6a62; box-shadow: 0 4px 0 #2b6a62, 0 14px 30px rgba(23,49,58,0.10); }
+.card:active { -webkit-transform: translateY(1px); transform: translateY(1px); box-shadow: 0 1px 0 #2b6a62; }
+.card .badge {
+  position: absolute; left: 18px; top: 50%; margin-top: -29px; width: 58px; height: 58px; border-radius: 16px;
+  color: #fff; font-size: 30px; font-weight: 800; line-height: 58px; text-align: center;
+}
+.card.qa .badge { background: #2b6a62; } .card.qb .badge { background: #d9752b; } .card.qc .badge { background: #3f6fb5; } .card.qd .badge { background: #a53d6e; }
+.card .title { display: block; font-size: 24px; font-weight: 800; }
+.card .sub { display: block; color: #5c7378; font-size: 16px; margin-top: 2px; }
+.card .best { position: absolute; right: 18px; top: 50%; margin-top: -16px; font-size: 15px; font-weight: 700; color: #2b6a62; background: #e6f1ef; border-radius: 999px; padding: 5px 12px; line-height: 22px; }
+.card .best.none { color: #7d9196; background: #eef2f1; }
+.card .best.perfect { color: #8a5a00; background: #ffe9b8; }
+.options { text-align: center; color: #5c7378; font-size: 16px; margin-top: 18px; }
+.options label { display: inline-block; margin: 0 12px; cursor: pointer; }
+.options input { vertical-align: middle; margin-right: 6px; -webkit-transform: scale(1.2); transform: scale(1.2); }
+.hint { text-align: center; color: #8a9b9f; font-size: 14px; margin-top: 26px; }
+.hint kbd { display: inline-block; border: 1px solid #c5d2d0; border-bottom-width: 2px; border-radius: 5px; padding: 0 6px; background: #fff; font-family: inherit; font-size: 13px; }
+
+/* ---------- quiz ---------- */
+#quiz .wrap { padding-right: 186px; }
+.topbar { position: relative; min-height: 40px; margin-bottom: 14px; }
+.topbar .back { position: absolute; left: 0; top: 0; background: none; border: 2px solid #c9d7d5; border-radius: 999px; padding: 6px 14px 6px 10px; color: #3f5a60; font-weight: 700; font-size: 15px; }
+.topbar .back:hover, .topbar .back.btn-focus { border-color: #2b6a62; color: #2b6a62; }
+.topbar .label { position: absolute; right: 0; top: 2px; font-size: 15px; font-weight: 700; color: #5c7378; text-transform: uppercase; letter-spacing: 1px; }
+.qcount { font-size: 15px; font-weight: 700; color: #2b6a62; text-transform: uppercase; letter-spacing: 1.5px; margin: 10px 0 8px; }
+.qtext { font-size: 24px; font-weight: 700; line-height: 1.35; color: #17313a; }
+.qbody { margin: 16px 0 8px; }
+table.qtab { border-collapse: collapse; margin: 6px 0 14px; font-size: 17px; background: #fff; }
+table.qtab th, table.qtab td { border: 1px solid #c9d7d5; padding: 6px 16px; text-align: center; }
+table.qtab th { background: #e6f1ef; font-weight: 700; }
+table.qtab td:first-child { text-align: left; }
+table.qtab th:first-child { text-align: left; }
+.fig { margin: 8px 0 14px; padding: 12px; background: #fff; border: 1px solid #d8e3e1; border-radius: 12px; display: inline-block; max-width: 100%; }
+.fig svg { display: block; max-width: 100%; height: auto; }
+.answers { margin-top: 16px; }
+.ans {
+  display: block; width: 100%; text-align: left; position: relative;
+  background: #fff; border: 2px solid #c9d7d5; border-radius: 14px;
+  padding: 14px 18px 14px 70px; margin: 0 0 10px; min-height: 60px;
+  font-size: 21px; font-weight: 600; color: #17313a;
+  -webkit-transition: border-color .1s, -webkit-transform .1s, background .15s; transition: border-color .1s, transform .1s, background .15s;
+}
+.ans .letter { position: absolute; left: 14px; top: 50%; margin-top: -18px; width: 36px; height: 36px; line-height: 36px; border-radius: 10px; text-align: center; background: #e6f1ef; color: #2b6a62; font-weight: 800; font-size: 18px; }
+.ans:hover, .ans.btn-focus { border-color: #2b6a62; }
+.ans:active { -webkit-transform: scale(0.99); transform: scale(0.99); }
+.ans[disabled] { cursor: default; }
+.ans.right { background: #e3f6ea; border-color: #2a9d5c; color: #175c35; }
+.ans.right .letter { background: #2a9d5c; color: #fff; }
+.ans.wrong { background: #fde9e7; border-color: #d9463b; color: #8a2a23; -webkit-animation: shake .35s; animation: shake .35s; }
+.ans.wrong .letter { background: #d9463b; color: #fff; }
+.ans.dim { opacity: 0.5; }
+.ans.reveal { border-color: #2a9d5c; border-style: dashed; }
+.ans.reveal .letter { background: #2a9d5c; color: #fff; }
+@-webkit-keyframes shake { 0%,100% { -webkit-transform: translateX(0); } 25% { -webkit-transform: translateX(-6px); } 50% { -webkit-transform: translateX(6px); } 75% { -webkit-transform: translateX(-4px); } }
+@keyframes shake { 0%,100% { transform: translateX(0); } 25% { transform: translateX(-6px); } 50% { transform: translateX(6px); } 75% { transform: translateX(-4px); } }
+.feedback { margin-top: 10px; border-radius: 14px; padding: 14px 18px; font-size: 18px; -webkit-animation: pop .25s ease-out; animation: pop .25s ease-out; }
+.feedback.ok { background: #e3f6ea; border: 2px solid #9ad8b4; color: #175c35; }
+.feedback.no { background: #fde9e7; border: 2px solid #f1b0aa; color: #8a2a23; }
+.feedback .big { font-size: 22px; font-weight: 800; display: block; margin-bottom: 4px; }
+.feedback .expl { color: #2f4a52; }
+@-webkit-keyframes pop { from { -webkit-transform: scale(0.96); opacity: 0; } to { -webkit-transform: scale(1); opacity: 1; } }
+@keyframes pop { from { transform: scale(0.96); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+.next {
+  display: block; width: 100%; margin-top: 14px; padding: 15px; border: 0; border-radius: 14px;
+  background: #2b6a62; color: #fff; font-size: 21px; font-weight: 800;
+  box-shadow: 0 4px 0 #1b4a44;
+}
+.next:hover, .next.btn-focus { background: #33797f; }
+.next:active { -webkit-transform: translateY(2px); transform: translateY(2px); box-shadow: 0 2px 0 #1b4a44; }
+
+/* ---------- score tower (right-hand panel) ---------- */
+.tower {
+  position: fixed; right: 18px; top: 18px; bottom: 18px; width: 152px;
+  background: #fff; border: 2px solid #d8e3e1; border-radius: 20px;
+  box-shadow: 0 10px 24px rgba(23,49,58,0.08);
+  padding: 12px 10px 10px; text-align: center;
+}
+.tally { font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.6px; color: #7d9196; white-space: nowrap; }
+.tally .n { display: block; font-size: 26px; line-height: 1.1; font-weight: 800; letter-spacing: 0; margin-top: 2px; }
+.tally.right .n { color: #2a9d5c; } .tally.wrong .n { color: #d9463b; } .tally.togo .n { color: #17313a; }
+.tallies { margin: 2px 0 8px; font-size: 0; }
+.tallies .tally { display: inline-block; width: 33.3%; vertical-align: top; }
+.meter { position: absolute; left: 10px; right: 10px; top: 84px; bottom: 80px; background: #eef2f1; border-radius: 12px; padding: 5px; border: 1px solid #d8e3e1; }
+.cell { position: absolute; left: 5px; right: 5px; background: #fff; border: 1px solid #d8e3e1; border-radius: 4px; }
+.cell.on-right { background: #2fbf6c; border-color: #2a9d5c; box-shadow: 0 0 10px rgba(47,191,108,0.6); }
+.cell.on-wrong { background: #e85a4f; border-color: #d9463b; box-shadow: 0 0 10px rgba(232,90,79,0.6); }
+.cell.flash { -webkit-animation: glow .6s ease-out; animation: glow .6s ease-out; }
+@-webkit-keyframes glow { 0% { -webkit-transform: scale(1.12); box-shadow: 0 0 18px rgba(255,220,120,0.95); } 100% { -webkit-transform: scale(1); } }
+@keyframes glow { 0% { transform: scale(1.12); box-shadow: 0 0 18px rgba(255,220,120,0.95); } 100% { transform: scale(1); } }
+.tally.strk { display: none; }
+.streak { position: absolute; left: 0; right: 0; bottom: 54px; font-size: 14px; font-weight: 700; color: #7d9196; }
+.streak.hot { color: #d9752b; }
+.soundbtn { position: absolute; top: 10px; right: 10px; width: 34px; height: 34px; border-radius: 50%; border: 1px solid #d8e3e1; background: #fff; font-size: 17px; line-height: 30px; padding: 0; color: #17313a; }
+.soundbtn.off { color: #b0bdbb; text-decoration: line-through; }
+.soundbtn.menu { position: absolute; top: 16px; right: 16px; width: 44px; height: 44px; font-size: 22px; line-height: 40px; }
+.tower .soundbtn { top: auto; right: auto; left: 50%; margin-left: -17px; bottom: 8px; }
+.timer { position: absolute; left: 0; right: 0; bottom: 36px; text-align: center; font-size: 13px; color: #7d9196; font-weight: 700; }
+
+/* ---------- results ---------- */
+.result { text-align: center; padding-top: 20px; }
+.result .score { font-size: 72px; font-weight: 800; color: #2b6a62; line-height: 1; margin: 10px 0 4px; }
+.result .score small { font-size: 30px; color: #7d9196; }
+.result .msg { font-size: 28px; font-weight: 800; margin: 6px 0; }
+.result .detail { color: #5c7378; font-size: 17px; }
+.stars { font-size: 36px; letter-spacing: 6px; margin: 8px 0; }
+.stars .lit { color: #f5a623; } .stars .unlit { color: #d8e3e1; }
+.rbtns { margin: 22px 0 10px; }
+.rbtns button { display: inline-block; margin: 6px; padding: 13px 26px; border-radius: 999px; border: 2px solid #2b6a62; font-weight: 800; font-size: 19px; background: #2b6a62; color: #fff; box-shadow: 0 4px 0 #1b4a44; }
+.rbtns button.secondary { background: #fff; color: #2b6a62; box-shadow: 0 4px 0 #c9d7d5; border-color: #c9d7d5; }
+.rbtns button:active { -webkit-transform: translateY(2px); transform: translateY(2px); box-shadow: none; }
+.review { text-align: left; margin-top: 26px; }
+.review h3 { font-size: 20px; margin-bottom: 10px; color: #17313a; }
+.rv { background: #fff; border: 2px solid #d8e3e1; border-radius: 14px; padding: 14px 16px; margin-bottom: 12px; font-size: 17px; }
+.rv .qn { font-weight: 800; color: #2b6a62; }
+.rv .you { color: #8a2a23; } .rv .cor { color: #175c35; font-weight: 700; }
+.rv .ex { color: #3f5a60; margin-top: 6px; }
+.rv .fig { margin: 8px 0 4px; }
+.allright { background: #e3f6ea; border: 2px solid #9ad8b4; color: #175c35; border-radius: 14px; padding: 14px; font-weight: 700; }
+#confetti { position: fixed; left: 0; top: 0; width: 100%; height: 100%; pointer-events: none; z-index: 50; }
+
+/* ---------- narrow screens: tower becomes a bar ---------- */
+@media (max-width: 720px) {
+  body { font-size: 17px; }
+  .hero h1 { font-size: 34px; }
+  .wrap { padding: 16px 14px 50px; }
+  #quiz .wrap { padding-right: 14px; padding-top: 8px; }
+  .qtext { font-size: 21px; }
+  .ans { font-size: 19px; padding-left: 62px; }
+  .tower { position: relative; right: auto; top: auto; bottom: auto; width: auto; margin: 0 0 12px; padding: 8px 10px 10px; }
+  .tallies { margin: 0 0 4px; padding: 0 40px 0 44px; }
+  .tallies .tally { width: 24%; }
+  .tallies .tally .n { font-size: 22px; }
+  .tallies .tally.strk { display: inline-block; width: 24%; vertical-align: top; }
+  .meter { position: relative; left: auto; right: auto; top: auto; bottom: auto; height: 22px; padding: 3px; margin: 6px 0 0; }
+  .cell { position: absolute; top: 3px; bottom: 3px; left: auto; right: auto; }
+  .streak { display: none; }
+  .tower .soundbtn { position: absolute; top: 6px; right: 6px; bottom: auto; left: auto; margin: 0; width: 28px; height: 28px; line-height: 24px; font-size: 14px; }
+  .timer { position: absolute; top: 10px; left: 10px; right: auto; bottom: auto; width: auto; text-align: left; }
+  .card { padding-left: 80px; padding-right: 16px; min-height: 84px; }
+  .card .badge { left: 14px; width: 50px; height: 50px; line-height: 50px; font-size: 26px; margin-top: -25px; border-radius: 14px; }
+  .card .title { font-size: 21px; }
+  .card .best { position: static; display: inline-block; margin-top: 6px; }
+  .result .score { font-size: 58px; }
+}
+@media (max-height: 560px) and (min-width: 721px) {
+  .tower { bottom: 10px; top: 10px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ===================== MENU ===================== -->
+<div id="menu">
+  <button class="soundbtn menu" id="soundMenu" type="button" title="Sound on/off" aria-label="Sound on or off">&#128266;</button>
+  <div class="wrap">
+    <div class="hero">
+      <span class="kicker">Grade 4 &middot; InSpire Canada Math Contest</span>
+      <h1>Math Contest <span>Practice Quiz</span></h1>
+      <p>Four practice contests, 25 questions each. How many can you get right?!</p>
+    </div>
+    <div class="cards" id="cards"></div>
+    <div class="options">
+      <label><input type="checkbox" id="shuffle"> Shuffle the question order</label>
+    </div>
+    <div class="hint">Keyboard: press <kbd>A</kbd> <kbd>B</kbd> <kbd>C</kbd> <kbd>D</kbd> to answer and <kbd>Enter</kbd> for the next question.</div>
+  </div>
+</div>
+
+<!-- ===================== QUIZ ===================== -->
+<div id="quiz" class="hidden">
+  <div class="wrap">
+    <div class="topbar">
+      <button class="back" id="backBtn" type="button">&larr; Quizzes</button>
+      <div class="label" id="quizLabel">Quiz A</div>
+    </div>
+    <div class="tower" id="tower">
+      <div class="tallies">
+        <div class="tally right">Right<span class="n" id="nRight">0</span></div>
+        <div class="tally wrong">Wrong<span class="n" id="nWrong">0</span></div>
+        <div class="tally togo">To go<span class="n" id="nTogo">25</span></div>
+        <div class="tally strk" id="strkSmall">Streak<span class="n" id="nStreakSmall">0</span></div>
+      </div>
+      <div class="meter" id="meter"></div>
+      <div class="streak" id="streak">Streak: 0</div>
+      <div class="timer" id="timer">0:00</div>
+      <button class="soundbtn" id="soundQuiz" type="button" title="Sound on/off" aria-label="Sound on or off">&#128266;</button>
+    </div>
+    <div class="qcount" id="qcount">Question 1 of 25</div>
+    <div class="qtext" id="qtext"></div>
+    <div class="qbody" id="qbody"></div>
+    <div class="answers" id="answers"></div>
+    <div id="feedback"></div>
+    <button class="next hidden" id="nextBtn" type="button">Next question &rarr;</button>
+    <div aria-live="polite" class="hidden" id="live"></div>
+  </div>
+</div>
+
+<!-- ===================== RESULTS ===================== -->
+<div id="result" class="hidden">
+  <div class="wrap result">
+    <div class="qcount" id="resLabel">Quiz A finished</div>
+    <div class="score"><span id="resScore">0</span><small> / 25</small></div>
+    <div class="stars" id="resStars"></div>
+    <div class="msg" id="resMsg"></div>
+    <div class="detail" id="resDetail"></div>
+    <div class="rbtns">
+      <button type="button" id="againBtn">Play again</button>
+      <button type="button" class="secondary" id="menuBtn">Back to quizzes</button>
+    </div>
+    <div class="review" id="review"></div>
+  </div>
+</div>
+<canvas id="confetti" class="hidden"></canvas>
+
+<script>
+(function () {
+  'use strict';
+  var DATA = {"A":[{"n":1,"q":"A bicycle counter shows 4,998. Six more bicycles pass. What number does it show now?","o":["4,904","5,004","5,014","5,104"],"a":"B","e":"Two bicycles bring the count to 5,000. The other four bring it to 5,004."},{"n":2,"q":"A pear costs 65¢ and a plum costs 45¢. Sal buys one of each and pays with a $2 coin. How much change does Sal get?","o":["80¢","85¢","90¢","95¢"],"a":"C","e":"The fruit costs 110¢. Subtract 110¢ from 200¢ to get 90¢."},{"n":3,"q":"The table shows what has bloomed in a garden. If 6 more crocuses bloom, how many more crocuses than irises will be in bloom?","table":{"h":["Flower","Number in bloom"],"r":[["Tulips","12"],["Crocuses","9"],["Irises","8"]]},"o":["1","3","5","7"],"a":"D","e":"There will be 9 + 6 = 15 crocuses. That is 15 − 8 = 7 more than the number of irises."},{"n":4,"q":"Two equal-sized flatbreads are each cut into four equal pieces. After three pieces are eaten, how much flatbread is left?","o":["1 flatbread","1¼ flatbreads","1½ flatbreads","1¾ flatbreads"],"a":"B","e":"There are 8 − 3 = 5 quarter-pieces left. Four pieces make a whole flatbread, with one quarter left over."},{"n":5,"q":"At 2:45 p.m., a potter sets a timer for 35 minutes. At what time will it ring?","o":["3:20 p.m.","3:25 p.m.","3:30 p.m.","3:40 p.m."],"a":"A","e":"After 15 minutes it is 3:00 p.m. Another 20 minutes takes the time to 3:20 p.m."},{"n":6,"q":"Fair tickets cost $1 each or $4 for a bundle of six. What is the greatest number of tickets you can buy with $10?","o":["10","12","14","15"],"a":"C","e":"Two bundles give 12 tickets for $8. The last $2 buys two single tickets, for 14 in all."},{"n":7,"q":"Eve hangs a kite flag, two drum flags, a bell flag and a leaf flag, in that order. She keeps repeating the same five flags. What picture is on the 18th flag?","o":["Kite","Drum","Bell","Leaf"],"a":"B","e":"Three full groups use 15 flags. The 18th flag is the third flag in the next group, which is a drum."},{"n":8,"q":"A trail is 800 m long. Omar walks one quarter of it, rests, then walks another 150 m. How much of the trail does he still have to walk?","o":["350 m","400 m","425 m","450 m"],"a":"D","e":"One quarter of 800 m is 200 m. Subtract 200 m and 150 m from 800 m to get 450 m."},{"n":9,"q":"A rectangular vegetable patch is 8 m long and 5 m wide. A fence goes all the way around it, with one more straight fence joining the midpoints of its two long sides. What is the total length of fencing?","fig":"A9","o":["26 m","31 m","34 m","39 m"],"a":"B","e":"The outside fence is 8 + 5 + 8 + 5 = 26 m. The inside fence runs straight across the 5 m width, for 31 m altogether."},{"n":10,"q":"Sasha reaches the dock at 10:08 a.m. She can board any boat that has yet to leave. Which boat will get her to the island first?","table":{"h":["Boat","Leaves dock","Arrives at island"],"r":[["Otter","10:05 a.m.","10:30 a.m."],["Heron","10:10 a.m.","10:54 a.m."],["Gull","10:20 a.m.","10:50 a.m."],["Seal","10:30 a.m.","11:00 a.m."]]},"o":["Gull","Heron","Otter","Seal"],"a":"A","e":"Otter has already left. Of the other three boats, Gull arrives first, at 10:50 a.m."},{"n":11,"q":"In a throwing game, each hit earns 4 points and each miss costs 1 point. Priya starts at zero, throws eight times and hits the target five times. What is her final score?","o":["17","18","19","20"],"a":"A","e":"Five hits earn 20 points and three misses cost 3 points. Her score is 20 − 3 = 17."},{"n":12,"q":"On a trail map, 2 cm stands for 5 km. The marked route measures 6 cm on the map, but a detour adds 2 km to the walk. How long is the walk with the detour?","o":["13 km","15 km","16 km","17 km"],"a":"D","e":"The route measures three lots of 2 cm, so it represents 3 × 5 = 15 km. The detour brings the total to 17 km."},{"n":13,"q":"You may pick one marble without looking. Each marble in a bag is equally likely to be picked. Which bag gives you the best chance of picking a striped marble?","table":{"h":["Bag","Striped marbles","Plain marbles"],"r":[["P","2","4"],["Q","5","5"],["R","4","6"],["S","3","2"]]},"o":["Bag P","Bag Q","Bag R","Bag S"],"a":"D","e":"Only bag S has more striped marbles than plain ones. Its chance of a striped marble is greater than one half. In the other bags the chance is one half or less."},{"n":14,"q":"A 3 cm by 4 cm card and a 3 cm by 7 cm card are placed side by side. Their 3 cm edges meet with no gap or overlap. What is the perimeter of the new rectangle?","o":["22 cm","28 cm","31 cm","34 cm"],"a":"B","e":"The new rectangle is 3 cm by 11 cm. Its perimeter is 3 + 11 + 3 + 11 = 28 cm."},{"n":15,"q":"Ari, Lee, Noor and Sam line up for the slide. Noor is first, Ari is immediately behind Lee, and Sam is somewhere ahead of Lee. Who is third?","o":["Lee","Sam","Ari","Noor"],"a":"A","e":"Noor and Sam must both be ahead of Lee, and Ari must be behind Lee. The order is Noor, Sam, Lee, Ari."},{"n":16,"q":"This quilt is made of 12 equal squares. What fraction of the whole quilt is shaded?","fig":"A16","o":["1/3","1/2","2/3","3/4"],"a":"B","e":"Four whole squares are shaded. The four shaded halves make two more whole squares. That gives 6 shaded squares out of 12, or 1/2."},{"n":17,"q":"At a snack stall, you choose one fruit and one drink. Apples and pears each come with a choice of water, milk or juice. Peaches come only with water. How many different fruit-and-drink pairs can you order?","o":["5","6","7","8"],"a":"C","e":"There are three choices with an apple, three with a pear and one with a peach. That makes 3 + 3 + 1 = 7 pairs."},{"n":18,"q":"A square floor is covered with a square grid of identical tiles. Exactly 20 tiles have at least one side on the outside edge of the floor. How many tiles cover the whole floor?","o":["16","20","25","36"],"a":"D","e":"Counting each of the four sides includes each corner twice. Add 4 to 20, then divide by 4 to get 6 tiles per side. The floor has 6 × 6 = 36 tiles."},{"n":19,"q":"A museum packs 48 fossils into nine boxes. Every box is full. A small box holds four fossils and a large box holds eight. How many large boxes does the museum use?","o":["3","4","5","6"],"a":"A","e":"Nine small boxes would hold 36 fossils. Each large box adds space for four more, so the extra 12 fossils require 3 large boxes."},{"n":20,"q":"I am a three-digit number. My tens digit is three times my ones digit, and my hundreds digit is one less than my tens digit. My digits add to 13. What number am I?","o":["562","563","652","653"],"a":"A","e":"The tens and ones digits could be 3 and 1, 6 and 2, or 9 and 3. With the hundreds digit one less than the tens digit, only 562 has a digit sum of 13."},{"n":21,"q":"A token is hidden in one of four envelopes. Exactly one label in the table tells the truth. Which envelope holds the token?","table":{"h":["Envelope","Label"],"r":[["Red","The token is in red."],["Blue","The token is in red."],["Green","The token is in yellow."],["Yellow","The token is in green or yellow."]]},"o":["Red","Blue","Green","Yellow"],"a":"C","e":"If the token were in red or yellow, two labels would be true. If it were in blue, none would be true. A token in green makes only the yellow label true."},{"n":22,"q":"Leila puts half her beads in a jar. She puts one third of the remaining beads in a bag and still has 12 beads outside both containers. How many beads did she start with?","o":["18","24","30","36"],"a":"D","e":"The 12 loose beads are two thirds of what remained after the jar was filled. One third was 6, so 18 remained at that stage. Leila started with twice 18, or 36."},{"n":23,"q":"Two lights flash together at the start of a 100-second countdown. One flashes every 6 seconds and the other every 8 seconds. How many more times do they flash together before the countdown ends?","o":["3","4","6","8"],"a":"B","e":"The first shared multiple of 6 and 8 is 24. The lights flash together again at 24, 48, 72 and 96 seconds."},{"n":24,"q":"A strip of 36 paper squares is cut between squares to make four shorter strips. All four lengths must be different. What is the greatest possible number of squares in the shortest strip?","o":["6","7","8","9"],"a":"B","e":"Lengths of 7, 8, 9 and 12 use all 36 squares. If the shortest had 8 squares, the smallest possible total would be 8 + 9 + 10 + 11 = 38."},{"n":25,"q":"Mina walks along the streets from Home to the Pool. She only walks east or north. How many different routes take her through the star?","fig":"A25","o":["6","7","8","10"],"a":"A","e":"Mina can reach the star in two ways: east then north, or north then east. From the star she needs two east steps and one north step, and the north step can come first, second or third. That gives 2 × 3 = 6 routes."}],"B":[{"n":1,"q":"Thirty-five children sign up for a relay. A full team needs six runners. What is the greatest number of full teams they can make?","o":["4","5","6","7"],"a":"B","e":"Five teams use 30 runners. Only five runners remain, one short of a sixth full team."},{"n":2,"q":"A sign says that about 600 people visited the pool. The actual number was rounded to the nearest hundred. Which could have been the actual number?","o":["549","591","651","708"],"a":"B","e":"591 is only 9 away from 600. The other choices round to 500, 700 and 700."},{"n":3,"q":"Each full crate holds six apples. Which stall has exactly 23 apples when you count its full crates and loose apples together?","table":{"h":["Stall","Full crates","Loose apples"],"r":[["North","3","1"],["East","3","4"],["South","4","2"],["West","3","5"]]},"o":["North","East","South","West"],"a":"D","e":"West has 3 × 6 + 5 = 23 apples. North has 19, East has 22 and South has 26."},{"n":4,"q":"Eli draws both diagonals on a square card. Each diagonal runs straight from one corner to the opposite corner. How many pieces will Eli have if he cuts along both lines?","o":["3","4","6","8"],"a":"B","e":"The diagonals cross in the middle. Each of the four sides of the square belongs to a separate triangular piece."},{"n":5,"q":"A pumpkin weighs 1 kg and 80 g. Which number shows its mass in grams?","o":["180 g","800 g","1,008 g","1,080 g"],"a":"D","e":"One kilogram is 1,000 grams. Add 80 grams to get 1,080 grams."},{"n":6,"q":"A school picnic takes place on Wednesday, June 3. The next picnic is on June 19 of the same year. On which day of the week is the next picnic?","o":["Friday","Saturday","Sunday","Monday"],"a":"A","e":"Two weeks after June 3 is Wednesday, June 17. Two more days take you to Friday, June 19."},{"n":7,"q":"Mika packs half of 18 oranges. Lou packs one quarter of 40 oranges. Who packs more oranges, and by how many?","o":["Mika by 1","Mika by 2","Lou by 1","Lou by 2"],"a":"C","e":"Mika packs 18 ÷ 2 = 9. Lou packs 40 ÷ 4 = 10, so Lou packs one more."},{"n":8,"q":"The two pans balance. All the squares weigh the same, and each triangle weighs the same. If one square weighs 4 g, how much does one triangle weigh?","fig":"B8","o":["4 g","8 g","12 g","16 g"],"a":"B","e":"Remove one triangle and one square from each pan. One triangle now balances two squares, so it weighs 2 × 4 = 8 g."},{"n":9,"q":"Inez reads 60 pages over the four days shown. She reads the same number of pages on Tuesday and Thursday. How many pages does she read on Tuesday?","table":{"h":["Day","Pages read"],"r":[["Monday","13"],["Tuesday","?"],["Wednesday","17"],["Thursday","?"]]},"o":["13","15","17","30"],"a":"B","e":"Monday and Wednesday account for 13 + 17 = 30 pages. Half of the remaining 30 pages is 15."},{"n":10,"q":"A rectangular playground is 14 m long and 8 m wide. Aran starts halfway along one of the 14 m sides and follows the edge to a corner on the opposite 14 m side. What is the shortest distance he can walk?","o":["8 m","11 m","15 m","22 m"],"a":"C","e":"Aran walks half of 14 m to the nearest corner, then along an 8 m side. That is 7 + 8 = 15 m."},{"n":11,"q":"A number machine starts at 4. One button adds 3, and another button doubles the number. If you must press the add button twice and the double button once, what is the largest possible result?","o":["14","17","18","20"],"a":"D","e":"Add both 3s before doubling to get the most from the double button. The result is (4 + 3 + 3) × 2 = 20."},{"n":12,"q":"Mina has five sticks that are each 20 cm long. She cuts a 6 cm piece from each one. If she lays just the five longer pieces end to end, how long is the line?","o":["70 cm","76 cm","80 cm","94 cm"],"a":"A","e":"Each longer piece measures 20 − 6 = 14 cm. Five of them measure 5 × 14 = 70 cm."},{"n":13,"q":"A jar contains ten dimes and ten quarters. You may choose exactly three coins. How many different totals could your three coins be worth?","o":["4","5","6","8"],"a":"A","e":"The coins can include zero, one, two or three quarters. The totals are 30¢, 45¢, 60¢ and 75¢."},{"n":14,"q":"Rafi has 12 tokens and wants to play exactly two different games, once each. Each game gives the number of prize tickets shown. What is the most tickets he can collect?","table":{"h":["Game","Token cost","Prize tickets"],"r":[["Scoop","4","7"],["Roll","5","9"],["Toss","7","13"],["Spin","8","17"]]},"o":["20","22","24","30"],"a":"C","e":"Scoop and Spin cost 4 + 8 = 12 tokens and give 7 + 17 = 24 tickets. The best pair without Spin is Roll and Toss, which gives 22."},{"n":15,"q":"Nadia folds a square sheet in half twice to make a smaller square. At the corner where all four original corners meet, she clips off a small triangle with one straight cut. How many sides does the unfolded sheet have?","o":["5","6","7","8"],"a":"D","e":"The cut clips all four original corners. The four original sides become shorter and there are four new cut sides, making eight sides."},{"n":16,"q":"A bag contains three gold buttons, five silver buttons and two blue buttons. Without looking, how many buttons must you take to be certain of getting at least one silver button?","o":["5","6","7","8"],"a":"B","e":"You could first take all five non-silver buttons. The sixth button would then have to be silver."},{"n":17,"q":"Ten lights in a row are numbered 1 to 10 and all start off. Eva turns on every even-numbered light. Then she switches lights 3, 6 and 9 to the opposite of whatever they are showing. How many lights are on now?","o":["3","4","5","6"],"a":"D","e":"Five even-numbered lights turn on. Changing 3, 6 and 9 turns two lights on and one off, giving 5 + 2 − 1 = 6."},{"n":18,"q":"A piece of the middle line is missing from this drawing. How many squares still have all four sides drawn? Count squares of every size.","fig":"B18","o":["4","5","6","8"],"a":"C","e":"There are two small squares on the left and two on the right. Two larger squares still have complete outlines. The missing line is inside both large squares, so the total is 4 + 2 = 6."},{"n":19,"q":"A rectangle is made of 24 square tiles, each 1 cm on a side. Its perimeter is 20 cm. How long is the shorter side?","o":["3 cm","4 cm","6 cm","8 cm"],"a":"B","e":"The two side lengths must multiply to 24 and add to 10, half the perimeter. The pair is 4 cm and 6 cm."},{"n":20,"q":"A puppet show starts at 1:40 p.m. and lasts 1 hour 25 minutes, including a 10-minute break between its two acts. The second act is twice as long as the first. At what time does the break begin?","o":["2:05 p.m.","2:10 p.m.","2:15 p.m.","2:30 p.m."],"a":"A","e":"The acts use 85 − 10 = 75 minutes. Split 75 into three equal parts, one for the first act and two for the second. The first act lasts 25 minutes and ends at 2:05 p.m."},{"n":21,"q":"Ada builds a tower with 1 block, then a new tower with 3 blocks, then one with 5 blocks, continuing with two more blocks in each new tower. She has 60 blocks and keeps every tower she builds. After she builds as many complete towers as possible, how many blocks are left?","o":["4","7","9","11"],"a":"D","e":"The first seven towers use 1 + 3 + 5 + 7 + 9 + 11 + 13 = 49 blocks. There are 11 left, too few for the next tower of 15."},{"n":22,"q":"A blue sticker covers half a page. A red sticker covers one quarter of that same page. Together they cover five eighths of the page. What fraction of the page lies under both stickers?","o":["⅛","¼","⅜","½"],"a":"A","e":"The sticker areas separately are four eighths and two eighths. Their sum is six eighths, one eighth more than they cover together. That one eighth was counted twice."},{"n":23,"q":"Four children stand at the 0 m, 3 m, 8 m and 11 m marks along a straight path. They all walk to the same meeting spot on the path. What is the smallest possible total distance the four children can walk?","o":["8 m","11 m","14 m","16 m"],"a":"D","e":"The two outer children must together walk at least 11 m and the two inner children at least 5 m. Meeting at the 3 m mark achieves 3 + 0 + 5 + 8 = 16 m."},{"n":24,"q":"Anu and Jo start with the same number of marbles. Anu gives Jo five marbles. Jo now has twice as many marbles as Anu. How many marbles did each child start with?","o":["10","15","20","25"],"a":"B","e":"After the gift, Jo has 10 more than Anu. Since Jo has twice as many, Anu now has 10 and Jo has 20. Undo the gift to get 15 each."},{"n":25,"q":"Five friends stand in a circle, each wearing either a red hat or a blue hat. They score one point for each pair of neighbours whose hats are different colours. What is the highest possible score?","o":["2","3","4","5"],"a":"C","e":"Try red, blue, red, blue, red around the circle. Four pairs score. To score five, every hat would have to alternate, but the fifth hat would then match the first."}],"C":[{"n":1,"q":"A toy fox faces west. It makes one quarter turn to its left. Which way does it face now?","o":["North","South","East","West"],"a":"B","e":"On a compass, a left turn from west points south."},{"n":2,"q":"On a map of a park, every 1 cm stands for 4 m in the park. A straight path measures 6 cm on the map. How long is the real path?","o":["10 m","16 m","20 m","24 m"],"a":"D","e":"Each of the 6 centimetres stands for 4 metres. The real path is 6 × 4 = 24 m long."},{"n":3,"q":"A scoreboard shows 483. The last two digits switch places. How much smaller is the new number?","o":["5","40","45","54"],"a":"C","e":"The new number is 438. The difference is 483 − 438 = 45."},{"n":4,"q":"Each canoe team paddles two laps. Which team has the shortest total time?","table":{"h":["Team","Lap 1","Lap 2"],"r":[["Loons","7 min","9 min"],["Herons","9 min","8 min"],["Otters","8 min","6 min"],["Beavers","7 min","8 min"]]},"o":["Otters","Beavers","Loons","Herons"],"a":"A","e":"Add both laps for each team. The totals are 16, 17, 14 and 15 minutes. The Otters are fastest."},{"n":5,"q":"One square window has 4 equal panes. A second window has 8 equal panes. What fraction of the second window should be covered to match the fraction covered by 3 panes of the first?","o":["3 out of 8","4 out of 8","6 out of 8","7 out of 8"],"a":"C","e":"Three out of four is the same fraction as six out of eight. Double both counts."},{"n":6,"q":"The marks on this number line are equally spaced. Which number belongs at the triangle?","fig":"C6","o":["50","54","58","66"],"a":"C","e":"There are three equal gaps from 18 to 42. Each gap is (42 − 18) ÷ 3 = 8. The triangle is two gaps past 42, at 42 + 16 = 58."},{"n":7,"q":"A triangular garden has two equal sides, each 11 m long. Its perimeter is 29 m. How long is the third side?","o":["7 m","9 m","14 m","18 m"],"a":"A","e":"The two equal sides total 22 m. The third measures 29 − 22 = 7 m."},{"n":8,"q":"There are 25 coat hooks numbered 1 to 25. A gold star goes on every hook whose number contains the digit 2. How many hooks get a star?","o":["5","6","7","8"],"a":"D","e":"The hooks are 2, 12, 20, 21, 22, 23, 24 and 25. Hook 22 gets just one star."},{"n":9,"q":"Along a straight path, 9 posts stand in a line with 4 m between neighbouring posts. How far is it from the first post to the last?","o":["28 m","32 m","36 m","40 m"],"a":"B","e":"Nine posts make eight gaps. Eight gaps of 4 m span 32 m."},{"n":10,"q":"Two litres of soup fill 8 identical mugs exactly. How many of these mugs can be filled from a jug holding 750 mL?","o":["1","2","3","4"],"a":"C","e":"Each mug holds 2,000 ÷ 8 = 250 mL. Three mugs hold 750 mL."},{"n":11,"q":"Two swimmers start at opposite ends of a 25 m pool and swim straight towards each other. When they meet, Sol has swum 7 m farther than Eve. How far has Sol swum?","o":["9 m","14 m","16 m","18 m"],"a":"C","e":"Take away Sol's extra 7 m. The other 18 m splits equally, giving Eve 9 m. Sol has swum 9 + 7 = 16 m."},{"n":12,"q":"These landmarks lie on one trail. Amira walks from the start to the lookout, back to the pond, then forward to the picnic rock. How far does she walk altogether?","table":{"h":["Landmark","Distance from start"],"r":[["Pond","200 m"],["Lookout","500 m"],["Picnic rock","750 m"]]},"o":["750 m","1,050 m","1,250 m","1,350 m"],"a":"D","e":"The three stretches are 500 m, 500 − 200 = 300 m, and 750 − 200 = 550 m. Together they are 1,350 m."},{"n":13,"q":"At a trading post, 2 pine cones are worth 3 shells, and 4 shells are worth 1 feather. How many pine cones are worth 3 feathers?","o":["8","12","16","18"],"a":"A","e":"Three feathers are worth 12 shells. Four groups of 3 shells are worth four groups of 2 pine cones, or 8 cones."},{"n":14,"q":"Alex has 36 stamps. He gives his sister one third of them. Then he puts one quarter of the stamps he has left into an album. How many are still loose?","o":["12","15","18","24"],"a":"C","e":"He gives away 12 stamps and has 24 left. He puts 6 into the album, leaving 18 loose."},{"n":15,"q":"In a bag of beads, 7 are black and 3 are white. Jo adds 2 black beads and 4 white beads. How many more white beads must she add so that either colour is equally likely when she picks one at random?","o":["1","2","3","4"],"a":"B","e":"After the first additions, Jo has 9 black beads and 7 white beads. Adding 2 white beads makes the numbers equal."},{"n":16,"q":"Two rectangular mats are made from 1 m square tiles. One mat is 3 tiles by 8 tiles. The other is 4 tiles by 6 tiles. How much longer is the perimeter of the first mat?","o":["2 m","4 m","6 m","8 m"],"a":"A","e":"The perimeters are 3 + 8 + 3 + 8 = 22 m and 4 + 6 + 4 + 6 = 20 m. They differ by 2 m."},{"n":17,"q":"In one March there are five Sundays, five Mondays and only four Saturdays. March has 31 days. What day of the week is March 1 that year?","o":["Friday","Saturday","Sunday","Monday"],"a":"C","e":"Four full weeks use 28 days. The days of the week that fall on March 1, 2 and 3 occur five times. Those days include Sunday and Monday but exclude Saturday, so they must be Sunday, Monday and Tuesday."},{"n":18,"q":"A sheet of stickers has 2 rows of 3 square stickers. Noor wants to choose two stickers that share a full edge. How many different pairs can she choose?","fig":"C18","o":["6","7","8","9"],"a":"B","e":"Each row has 2 side-by-side pairs, giving 4. There are also 3 up-and-down pairs, for a total of 7."},{"n":19,"q":"My four-digit number reads the same forwards and backwards. Its first digit is 1 greater than its second digit. All four digits add to 14. What is my number?","o":["2332","3443","4224","4334"],"a":"D","e":"Both digits appear twice, so the first two add to 7. They differ by 1, with the larger first, so the number is 4334."},{"n":20,"q":"One cup is 12 cm tall. Four of these cups stacked together are 21 cm tall. Each extra cup adds the same height to a stack. How tall is a stack of 9 cups?","o":["36 cm","39 cm","42 cm","48 cm"],"a":"A","e":"The 3 extra cups add 9 cm, so each adds 3 cm. Nine cups stand 12 + 8 × 3 = 36 cm tall."},{"n":21,"q":"Each number shows how many cubes are stacked on one square of a board. Look straight at the board from the front, so stacks in the same column line up. How many square faces appear in the flat view?","table":{"h":["","Left","Centre","Right"],"r":[["Back row","3","1","2"],["Middle row","1","4","1"],["Front row","2","2","3"]]},"o":["7","10","14","19"],"a":"B","e":"The tallest stack in each column determines its visible height. From left to right those heights are 3, 4 and 3, giving 10 square faces."},{"n":22,"q":"A design must look the same when folded along either dotted line. What is the fewest number of blank squares you must shade so the shaded squares match on both folds?","fig":"C22","o":["4","6","8","12"],"a":"C","e":"Two more shaded squares complete the four corners. The shaded square at the left edge needs three matches, and the shaded square near the centre needs three more. That makes 2 + 3 + 3 = 8."},{"n":23,"q":"Six stepping stones are in a line, numbered 1 to 6. A frog starts on 1 and each jump moves it forward either one or two stones. How many different routes end on stone 6?","o":["5","6","7","8"],"a":"D","e":"There is 1 way to reach stone 2 and 2 ways to reach stone 3. For each later stone, add the routes to the two stones before it. Stones 4, 5 and 6 have 3, 5 and 8 routes."},{"n":24,"q":"Five different flags hang in a row. The maple leaf flag must be first on the left. The loon and fox flags must hang next to each other. How many orders are possible?","o":["12","16","20","24"],"a":"A","e":"After the maple leaf, the pair can occupy places 2–3, 3–4 or 4–5. It has 2 orders, and the two other flags have 2 orders. That makes 3 × 2 × 2 = 12."},{"n":25,"q":"A rectangular mosaic uses 48 square tiles. Removing its top row and its rightmost column leaves a smaller rectangle of 35 tiles. How many tiles long was the longer side of the original mosaic?","o":["4","6","7","8"],"a":"D","e":"Try factor pairs of 48. A 6-by-8 mosaic becomes 5 by 7 after the cuts, leaving 35 tiles. Its longer side was 8 tiles."}],"D":[{"n":1,"q":"In a card game, Sam has three 100-point cards, two 10-point cards and four 1-point cards. What is his score?","o":["234","324","342","423"],"a":"B","e":"The cards are worth 300 + 20 + 4 = 324 points."},{"n":2,"q":"Mara lines up a pencil on part of a broken ruler, as shown. How long is her pencil?","fig":"D2","o":["5 cm","5½ cm","6 cm","6½ cm"],"a":"B","e":"The pencil starts at 6½ cm and ends at 12 cm. From 6½ to 7 is half a centimetre, and from 7 to 12 is another 5 cm. The pencil is 5½ cm long."},{"n":3,"q":"The rink clock shows 2:46 p.m. The next skating session starts at 3:05 p.m. How long is the wait?","o":["19 minutes","21 minutes","29 minutes","59 minutes"],"a":"A","e":"It takes 14 minutes to reach 3:00 and another 5 minutes to reach 3:05. That makes 19 minutes."},{"n":4,"q":"Noah starts at 195 and counts forward in steps of 4. Which number does he say?","o":["201","202","203","204"],"a":"C","e":"The count begins 195, 199, 203. Only 203 appears among the choices."},{"n":5,"q":"The table shows how many hats a ski club lent out. How many more hats did it lend on Saturday than on Thursday and Friday combined?","table":{"h":["Day","Hats"],"r":[["Thursday","6"],["Friday","8"],["Saturday","17"]]},"o":["3","5","9","14"],"a":"A","e":"The club lent 6 + 8 = 14 hats on the first two days. Saturday's total was 17 − 14 = 3 higher."},{"n":6,"q":"Blank postcards come in packs of 8. Each pack costs $3. Noor spends as much of her $10 as she can on whole packs. How many postcards does she buy?","o":["8","16","20","24"],"a":"D","e":"Three packs cost $9 and four would cost $12. Three packs contain 3 × 8 = 24 postcards."},{"n":7,"q":"A paper strip is marked in centimetres like a ruler. You fold it so that the 2 cm mark lands exactly on the 10 cm mark. Which mark lies on the fold?","o":["4 cm","6 cm","8 cm","12 cm"],"a":"B","e":"The two marks are 8 cm apart. The fold is halfway between them, 4 cm past the 2 cm mark."},{"n":8,"q":"There are 18 muffins on a tray. One third have raisins. Half of the muffins without raisins have blueberries. How many have blueberries and no raisins?","o":["3","6","9","12"],"a":"B","e":"There are 18 ÷ 3 = 6 raisin muffins, leaving 12 without raisins. Half of 12 is 6."},{"n":9,"q":"Eight children stand ahead of Luca in line and six stand behind him. Four children leave from the front, then two join at the back. How many children are in line now, including Luca?","o":["11","12","13","15"],"a":"C","e":"The line started with 8 + 1 + 6 = 15 children. After the changes it has 15 − 4 + 2 = 13."},{"n":10,"q":"A jar holds five coins worth $2.75 altogether. Each coin is either a loonie ($1) or a quarter (25¢). How many loonies are in the jar?","o":["2","3","4","5"],"a":"A","e":"Two loonies and three quarters make five coins worth $2.00 + $0.75 = $2.75."},{"n":11,"q":"Eva needs to reach the library by 11:05 a.m. She takes a bus, then walks 8 minutes from the stop. What is the latest bus departure she can use?","table":{"h":["Bus leaves","Arrives at stop"],"r":[["10:10 a.m.","10:33 a.m."],["10:25 a.m.","10:50 a.m."],["10:35 a.m.","10:58 a.m."],["10:45 a.m.","11:01 a.m."]]},"o":["10:10 a.m.","10:25 a.m.","10:35 a.m.","10:45 a.m."],"a":"B","e":"Eva must reach the stop by 10:57. The 10:25 bus arrives at 10:50, but the next bus arrives at 10:58."},{"n":12,"q":"A bead pattern starts with three red beads, then one gold bead, and keeps repeating. How many gold beads are there from bead 8 through bead 22, counting both ends?","o":["4","5","6","7"],"a":"A","e":"Every fourth bead is gold. The gold beads in this stretch are at positions 8, 12, 16 and 20."},{"n":13,"q":"Three identical full pitchers hold 900 mL of syrup altogether. A cook pours half of one pitcher equally into three bowls. How much syrup goes into each bowl?","o":["50 mL","100 mL","150 mL","300 mL"],"a":"A","e":"One pitcher holds 900 ÷ 3 = 300 mL. Half is 150 mL. Dividing that among three bowls gives 50 mL each."},{"n":14,"q":"On an open square grid, Anu moves 4 squares north, 3 east, 1 south and 1 west. What is the fewest one-square moves she needs to get back to her start without moving diagonally?","o":["2","3","4","5"],"a":"D","e":"Anu finishes 3 squares north and 2 squares east of her start. She can get back in 3 + 2 = 5 moves."},{"n":15,"q":"Two ordinary dice, each numbered 1 to 6, show a total of 8. What is the largest possible difference between the two numbers showing?","o":["1","2","3","4"],"a":"D","e":"The possible pairs are 2 and 6, 3 and 5, or 4 and 4. The largest difference is 6 − 2 = 4."},{"n":16,"q":"A robot follows four commands. Each command moves it straight ahead by the number of squares shown. It travels 18 squares altogether. How many times did it follow the Leap command?","table":{"h":["Command","Squares moved"],"r":[["Step","2"],["Hop","4"],["Leap","7"]]},"o":["0","1","2","3"],"a":"C","e":"With no leaps, the robot could move at most 16 squares. One leap gives an odd total, and three leaps already cover 21 squares. Two leaps and two steps give 7 + 7 + 2 + 2 = 18."},{"n":17,"q":"Kai cuts out this shape and folds it along the lines to make a cube. He sets the cube on the face with four dots. How many dots are on the top face?","fig":"D17","o":["1","2","3","5"],"a":"A","e":"The four faces in a straight row wrap around the sides of the cube. The one-dot face and the four-dot face are two places apart in that row, so they end up opposite each other."},{"n":18,"q":"Each of 28 students votes for red, blue or green. Red gets 4 more votes than blue. Green gets twice as many votes as blue. How many students vote for red?","o":["6","8","10","12"],"a":"C","e":"Set aside red's 4 extra votes. The remaining 24 make four equal groups: one for red, one for blue and two for green. Red gets 6 + 4 = 10 votes."},{"n":19,"q":"A stamp album has 1 stamp on page 1, 2 stamps on page 2 and 4 on page 3. The pattern 1, 2, 4 repeats. When you count from page 1, on which page do you reach the 30th stamp?","o":["12","13","14","15"],"a":"C","e":"Each three-page group holds 7 stamps. The first 12 pages hold 28. Page 13 holds stamp 29. Page 14 holds stamps 30 and 31."},{"n":20,"q":"Kaya moves 2 books from the top shelf to the middle shelf. Then she moves 3 from the bottom shelf to the top. Now all three shelves have 9 books each. How many more books were on the bottom shelf than on the top at the start?","o":["2","4","5","7"],"a":"B","e":"The bottom shelf lost 3, so it began with 12. The top shelf gained 1 overall, so it began with 8. The difference was 12 − 8 = 4."},{"n":21,"q":"Six curling teams enter a league. Each team plays every other team exactly twice. How many games are played altogether?","o":["10","12","15","30"],"a":"D","e":"Each team plays 5 opponents twice, or 10 games. Multiplying by 6 counts each game once for each team in it. Divide 60 by 2 to get 30 games."},{"n":22,"q":"Four digit cards show 0, 2, 5 and 8. You choose three cards and arrange them to make a three-digit number. How many different numbers can you make that end in 0 or 5?","o":["8","10","12","16"],"a":"B","e":"For numbers ending in 0, there are 3 choices for the first digit and 2 for the middle, making 6. For numbers ending in 5, only 2 or 8 can start, leaving 2 middle choices. That gives 6 + 4 = 10."},{"n":23,"q":"A 9 cm by 6 cm rectangle is cut from cardboard. A 2 cm by 2 cm square is cut out of the middle of one long edge, well away from the corners. What is the perimeter of the shape that remains?","fig":"D23","o":["26 cm","30 cm","32 cm","34 cm"],"a":"D","e":"The old perimeter was 30 cm. The cut removes a 2 cm stretch of edge and replaces it with three 2 cm stretches around the notch. The new perimeter is 30 − 2 + 6 = 34 cm."},{"n":24,"q":"There are 16 stones in a pile. Two players take turns removing 1, 2, 3 or 4 stones. Whoever takes the last stone wins. How many stones should Hana take on her first turn to make sure she can win, whatever her opponent does?","o":["1","2","3","4"],"a":"A","e":"Take 1 to leave 15. On each later turn, take enough to bring the two players' moves to 5 stones in total. Hana then leaves 10, then 5, then 0 and wins."},{"n":25,"q":"Place the numbers 1 to 6 once each on a triangle, one at each corner and one halfway along each side. The three numbers along each side add to 10. What do the three corner numbers add to?","fig":"D25","o":["9","10","12","15"],"a":"A","e":"Adding the three side totals gives 30. The six numbers add to 21. The extra 30 − 21 = 9 comes from counting each corner twice, so the corners add to 9."}]};
+  var FIGS = {"A9":"<svg viewBox=\"0 0 230 150\" width=\"230\" height=\"150\" aria-label=\"A rectangle 8 m long and 5 m wide with a dashed fence joining the midpoints of the long sides\">\n<rect x=\"20\" y=\"32\" width=\"160\" height=\"100\" fill=\"#fff\" stroke=\"#17313a\" stroke-width=\"2.5\"/>\n<line x1=\"100\" y1=\"32\" x2=\"100\" y2=\"132\" stroke=\"#17313a\" stroke-width=\"2.5\" stroke-dasharray=\"6,5\"/>\n<text x=\"100\" y=\"20\" text-anchor=\"middle\" font-size=\"15\" fill=\"#17313a\">8 m</text>\n<text x=\"192\" y=\"87\" font-size=\"15\" fill=\"#17313a\">5 m</text>\n</svg>","A16":"<svg viewBox=\"0 0 210 160\" width=\"210\" height=\"160\" aria-label=\"A quilt of 12 squares in 3 rows of 4; some squares are fully shaded and some are half shaded\"><rect x=\"5\" y=\"5\" width=\"200\" height=\"150\" fill=\"#fff\"/><rect x=\"5\" y=\"5\" width=\"50\" height=\"50\" fill=\"#2b6a62\"/><rect x=\"155\" y=\"5\" width=\"50\" height=\"50\" fill=\"#2b6a62\"/><rect x=\"105\" y=\"55\" width=\"50\" height=\"50\" fill=\"#2b6a62\"/><rect x=\"55\" y=\"105\" width=\"50\" height=\"50\" fill=\"#2b6a62\"/><polygon points=\"105,5 105,55 55,55\" fill=\"#2b6a62\"/><line x1=\"105\" y1=\"5\" x2=\"55\" y2=\"55\" stroke=\"#17313a\" stroke-width=\"2\"/><polygon points=\"105,55 105,105 55,105\" fill=\"#2b6a62\"/><line x1=\"105\" y1=\"55\" x2=\"55\" y2=\"105\" stroke=\"#17313a\" stroke-width=\"2\"/><polygon points=\"55,105 55,155 5,155\" fill=\"#2b6a62\"/><line x1=\"55\" y1=\"105\" x2=\"5\" y2=\"155\" stroke=\"#17313a\" stroke-width=\"2\"/><polygon points=\"155,55 155,105 205,105\" fill=\"#2b6a62\"/><line x1=\"155\" y1=\"55\" x2=\"205\" y2=\"105\" stroke=\"#17313a\" stroke-width=\"2\"/><g stroke=\"#17313a\" stroke-width=\"3\" stroke-linecap=\"square\"><line x1=\"5\" y1=\"5\" x2=\"5\" y2=\"155\"/><line x1=\"55\" y1=\"5\" x2=\"55\" y2=\"155\"/><line x1=\"105\" y1=\"5\" x2=\"105\" y2=\"155\"/><line x1=\"155\" y1=\"5\" x2=\"155\" y2=\"155\"/><line x1=\"205\" y1=\"5\" x2=\"205\" y2=\"155\"/><line x1=\"5\" y1=\"5\" x2=\"205\" y2=\"5\"/><line x1=\"5\" y1=\"55\" x2=\"205\" y2=\"55\"/><line x1=\"5\" y1=\"105\" x2=\"205\" y2=\"105\"/><line x1=\"5\" y1=\"155\" x2=\"205\" y2=\"155\"/></g></svg>","A25":"<svg viewBox=\"0 0 380 185\" width=\"380\" height=\"185\" aria-label=\"A grid of streets 3 blocks wide and 2 blocks tall. Home is at the bottom-left corner, the Pool at the top-right corner, and a star marks the intersection one block east and one block north of Home. A compass shows North pointing up and East pointing right\"><g stroke=\"#17313a\" stroke-width=\"3\" stroke-linecap=\"square\"><line x1=\"30\" y1=\"30\" x2=\"30\" y2=\"150\"/><line x1=\"90\" y1=\"30\" x2=\"90\" y2=\"150\"/><line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"150\"/><line x1=\"210\" y1=\"30\" x2=\"210\" y2=\"150\"/><line x1=\"30\" y1=\"30\" x2=\"210\" y2=\"30\"/><line x1=\"30\" y1=\"90\" x2=\"210\" y2=\"90\"/><line x1=\"30\" y1=\"150\" x2=\"210\" y2=\"150\"/></g><circle cx=\"30\" cy=\"150\" r=\"5.5\" fill=\"#17313a\"/><circle cx=\"210\" cy=\"30\" r=\"5.5\" fill=\"#17313a\"/><polygon points=\"90,77 93.2328,85.5504 102.364,85.9828 95.2308,91.6996 97.6412,100.517 90,95.5 82.3588,100.517 84.7692,91.6996 77.6363,85.9828 86.7672,85.5504\" fill=\"#2b6a62\" stroke=\"#17313a\" stroke-width=\"1.5\"/><text x=\"20\" y=\"174\" font-size=\"15\" fill=\"#17313a\">Home</text><text x=\"222\" y=\"35\" font-size=\"15\" fill=\"#17313a\">Pool</text><g stroke=\"#17313a\" stroke-width=\"3\" fill=\"#17313a\"><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"60\"/><polygon points=\"300,50 293,64 307,64\"/><line x1=\"300\" y1=\"130\" x2=\"355\" y2=\"130\"/><polygon points=\"365,130 351,123 351,137\"/></g><text x=\"300\" y=\"40\" text-anchor=\"middle\" font-size=\"15\" fill=\"#17313a\">North</text><text x=\"335\" y=\"155\" text-anchor=\"middle\" font-size=\"15\" fill=\"#17313a\">East</text></svg>","B8":"<svg viewBox=\"0 0 390 120\" width=\"390\" height=\"120\" aria-label=\"A balance scale. The left pan holds two triangles and one square. The right pan holds one triangle and three squares. The pans balance\"><polygon points=\"51,44 77,44 64,16\" fill=\"#2b6a62\" stroke=\"#17313a\" stroke-width=\"2\"/><polygon points=\"82,44 108,44 95,16\" fill=\"#2b6a62\" stroke=\"#17313a\" stroke-width=\"2\"/><rect x=\"113\" y=\"18\" width=\"26\" height=\"26\" fill=\"#fff\" stroke=\"#17313a\" stroke-width=\"2\"/><line x1=\"43\" y1=\"45\" x2=\"147\" y2=\"45\" stroke=\"#17313a\" stroke-width=\"3\"/><line x1=\"95\" y1=\"45\" x2=\"95\" y2=\"78\" stroke=\"#17313a\" stroke-width=\"3\"/><polygon points=\"235.5,44 261.5,44 248.5,16\" fill=\"#2b6a62\" stroke=\"#17313a\" stroke-width=\"2\"/><rect x=\"266.5\" y=\"18\" width=\"26\" height=\"26\" fill=\"#fff\" stroke=\"#17313a\" stroke-width=\"2\"/><rect x=\"297.5\" y=\"18\" width=\"26\" height=\"26\" fill=\"#fff\" stroke=\"#17313a\" stroke-width=\"2\"/><rect x=\"328.5\" y=\"18\" width=\"26\" height=\"26\" fill=\"#fff\" stroke=\"#17313a\" stroke-width=\"2\"/><line x1=\"227.5\" y1=\"45\" x2=\"362.5\" y2=\"45\" stroke=\"#17313a\" stroke-width=\"3\"/><line x1=\"295\" y1=\"45\" x2=\"295\" y2=\"78\" stroke=\"#17313a\" stroke-width=\"3\"/><line x1=\"20\" y1=\"78\" x2=\"370\" y2=\"78\" stroke=\"#17313a\" stroke-width=\"4\" stroke-linecap=\"round\"/><polygon points=\"195,78 172,112 218,112\" fill=\"#e4edeb\" stroke=\"#17313a\" stroke-width=\"3\" stroke-linejoin=\"round\"/></svg>","B18":"<svg viewBox=\"0 0 170 120\" width=\"170\" height=\"120\" aria-label=\"A rectangle divided into 2 rows of 3 squares, but the middle piece of the horizontal middle line, in the centre column, is missing\"><rect x=\"10\" y=\"10\" width=\"150\" height=\"100\" fill=\"#fff\"/><g stroke=\"#17313a\" stroke-width=\"2.5\" stroke-linecap=\"square\"><rect x=\"10\" y=\"10\" width=\"150\" height=\"100\" fill=\"none\"/><line x1=\"60\" y1=\"10\" x2=\"60\" y2=\"110\"/><line x1=\"110\" y1=\"10\" x2=\"110\" y2=\"110\"/><line x1=\"10\" y1=\"60\" x2=\"60\" y2=\"60\"/><line x1=\"110\" y1=\"60\" x2=\"160\" y2=\"60\"/></g></svg>","C6":"<svg viewBox=\"0 0 470 92\" width=\"470\" height=\"92\" aria-label=\"A number line with seven equally spaced marks. The second mark is labelled 18 and the fifth mark is labelled 42. A triangle points at the seventh mark\"><line x1=\"12\" y1=\"50\" x2=\"448\" y2=\"50\" stroke=\"#17313a\" stroke-width=\"2.5\"/><line x1=\"30\" y1=\"41\" x2=\"30\" y2=\"59\" stroke=\"#17313a\" stroke-width=\"2.5\"/><line x1=\"95\" y1=\"41\" x2=\"95\" y2=\"59\" stroke=\"#17313a\" stroke-width=\"2.5\"/><line x1=\"160\" y1=\"41\" x2=\"160\" y2=\"59\" stroke=\"#17313a\" stroke-width=\"2.5\"/><line x1=\"225\" y1=\"41\" x2=\"225\" y2=\"59\" stroke=\"#17313a\" stroke-width=\"2.5\"/><line x1=\"290\" y1=\"41\" x2=\"290\" y2=\"59\" stroke=\"#17313a\" stroke-width=\"2.5\"/><line x1=\"355\" y1=\"41\" x2=\"355\" y2=\"59\" stroke=\"#17313a\" stroke-width=\"2.5\"/><line x1=\"420\" y1=\"41\" x2=\"420\" y2=\"59\" stroke=\"#17313a\" stroke-width=\"2.5\"/><text x=\"95\" y=\"80\" text-anchor=\"middle\" font-size=\"16\" fill=\"#17313a\">18</text><text x=\"290\" y=\"80\" text-anchor=\"middle\" font-size=\"16\" fill=\"#17313a\">42</text><polygon points=\"409,14 431,14 420,34\" fill=\"#2b6a62\" stroke=\"#17313a\" stroke-width=\"2\"/></svg>","C18":"<svg viewBox=\"0 0 170 120\" width=\"170\" height=\"120\" aria-label=\"A sheet of 6 square stickers in 2 rows of 3\"><rect x=\"10\" y=\"10\" width=\"150\" height=\"100\" fill=\"#e4edeb\"/><g stroke=\"#17313a\" stroke-width=\"2.5\" stroke-linecap=\"square\"><line x1=\"10\" y1=\"10\" x2=\"10\" y2=\"110\"/><line x1=\"60\" y1=\"10\" x2=\"60\" y2=\"110\"/><line x1=\"110\" y1=\"10\" x2=\"110\" y2=\"110\"/><line x1=\"160\" y1=\"10\" x2=\"160\" y2=\"110\"/><line x1=\"10\" y1=\"10\" x2=\"160\" y2=\"10\"/><line x1=\"10\" y1=\"60\" x2=\"160\" y2=\"60\"/><line x1=\"10\" y1=\"110\" x2=\"160\" y2=\"110\"/></g></svg>","C22":"<svg viewBox=\"0 0 152 152\" width=\"152\" height=\"152\" aria-label=\"A 4 by 4 grid of squares with a dotted vertical fold line and a dotted horizontal fold line through the middle. Shaded squares: top-left corner, top-right corner, the square below the top-left corner, and the square in the third row, third column\"><rect x=\"12\" y=\"12\" width=\"128\" height=\"128\" fill=\"#fff\"/><rect x=\"12\" y=\"12\" width=\"32\" height=\"32\" fill=\"#2b6a62\"/><rect x=\"108\" y=\"12\" width=\"32\" height=\"32\" fill=\"#2b6a62\"/><rect x=\"12\" y=\"44\" width=\"32\" height=\"32\" fill=\"#2b6a62\"/><rect x=\"76\" y=\"76\" width=\"32\" height=\"32\" fill=\"#2b6a62\"/><g stroke=\"#7a8a88\" stroke-width=\"1.5\" stroke-linecap=\"square\"><line x1=\"12\" y1=\"12\" x2=\"12\" y2=\"140\"/><line x1=\"44\" y1=\"12\" x2=\"44\" y2=\"140\"/><line x1=\"76\" y1=\"12\" x2=\"76\" y2=\"140\"/><line x1=\"108\" y1=\"12\" x2=\"108\" y2=\"140\"/><line x1=\"140\" y1=\"12\" x2=\"140\" y2=\"140\"/><line x1=\"12\" y1=\"12\" x2=\"140\" y2=\"12\"/><line x1=\"12\" y1=\"44\" x2=\"140\" y2=\"44\"/><line x1=\"12\" y1=\"76\" x2=\"140\" y2=\"76\"/><line x1=\"12\" y1=\"108\" x2=\"140\" y2=\"108\"/><line x1=\"12\" y1=\"140\" x2=\"140\" y2=\"140\"/></g><g stroke=\"#17313a\" stroke-width=\"3\" stroke-dasharray=\"5,4\"><line x1=\"76\" y1=\"2\" x2=\"76\" y2=\"150\"/><line x1=\"2\" y1=\"76\" x2=\"150\" y2=\"76\"/></g></svg>","D2":"<svg viewBox=\"0 0 520 108\" width=\"520\" height=\"108\" aria-label=\"Part of a ruler marked from 6 cm to 14 cm with half-centimetre marks. A pencil lies above it, starting at the 6 and a half centimetre mark and ending at the 12 cm mark\"><rect x=\"18\" y=\"56\" width=\"466\" height=\"46\" rx=\"3\" fill=\"#e4edeb\" stroke=\"#17313a\" stroke-width=\"2\"/><line x1=\"30\" y1=\"56\" x2=\"30\" y2=\"76\" stroke=\"#17313a\" stroke-width=\"2\"/><text x=\"30\" y=\"96\" text-anchor=\"middle\" font-size=\"15\" fill=\"#17313a\">6</text><line x1=\"57.5\" y1=\"56\" x2=\"57.5\" y2=\"68\" stroke=\"#17313a\" stroke-width=\"2\"/><line x1=\"85\" y1=\"56\" x2=\"85\" y2=\"76\" stroke=\"#17313a\" stroke-width=\"2\"/><text x=\"85\" y=\"96\" text-anchor=\"middle\" font-size=\"15\" fill=\"#17313a\">7</text><line x1=\"112.5\" y1=\"56\" x2=\"112.5\" y2=\"68\" stroke=\"#17313a\" stroke-width=\"2\"/><line x1=\"140\" y1=\"56\" x2=\"140\" y2=\"76\" stroke=\"#17313a\" stroke-width=\"2\"/><text x=\"140\" y=\"96\" text-anchor=\"middle\" font-size=\"15\" fill=\"#17313a\">8</text><line x1=\"167.5\" y1=\"56\" x2=\"167.5\" y2=\"68\" stroke=\"#17313a\" stroke-width=\"2\"/><line x1=\"195\" y1=\"56\" x2=\"195\" y2=\"76\" stroke=\"#17313a\" stroke-width=\"2\"/><text x=\"195\" y=\"96\" text-anchor=\"middle\" font-size=\"15\" fill=\"#17313a\">9</text><line x1=\"222.5\" y1=\"56\" x2=\"222.5\" y2=\"68\" stroke=\"#17313a\" stroke-width=\"2\"/><line x1=\"250\" y1=\"56\" x2=\"250\" y2=\"76\" stroke=\"#17313a\" stroke-width=\"2\"/><text x=\"250\" y=\"96\" text-anchor=\"middle\" font-size=\"15\" fill=\"#17313a\">10</text><line x1=\"277.5\" y1=\"56\" x2=\"277.5\" y2=\"68\" stroke=\"#17313a\" stroke-width=\"2\"/><line x1=\"305\" y1=\"56\" x2=\"305\" y2=\"76\" stroke=\"#17313a\" stroke-width=\"2\"/><text x=\"305\" y=\"96\" text-anchor=\"middle\" font-size=\"15\" fill=\"#17313a\">11</text><line x1=\"332.5\" y1=\"56\" x2=\"332.5\" y2=\"68\" stroke=\"#17313a\" stroke-width=\"2\"/><line x1=\"360\" y1=\"56\" x2=\"360\" y2=\"76\" stroke=\"#17313a\" stroke-width=\"2\"/><text x=\"360\" y=\"96\" text-anchor=\"middle\" font-size=\"15\" fill=\"#17313a\">12</text><line x1=\"387.5\" y1=\"56\" x2=\"387.5\" y2=\"68\" stroke=\"#17313a\" stroke-width=\"2\"/><line x1=\"415\" y1=\"56\" x2=\"415\" y2=\"76\" stroke=\"#17313a\" stroke-width=\"2\"/><text x=\"415\" y=\"96\" text-anchor=\"middle\" font-size=\"15\" fill=\"#17313a\">13</text><line x1=\"442.5\" y1=\"56\" x2=\"442.5\" y2=\"68\" stroke=\"#17313a\" stroke-width=\"2\"/><line x1=\"470\" y1=\"56\" x2=\"470\" y2=\"76\" stroke=\"#17313a\" stroke-width=\"2\"/><text x=\"470\" y=\"96\" text-anchor=\"middle\" font-size=\"15\" fill=\"#17313a\">14</text><text x=\"490\" y=\"84\" font-size=\"15\" fill=\"#17313a\">cm</text><rect x=\"57.5\" y=\"14\" width=\"284.5\" height=\"22\" fill=\"#e4edeb\" stroke=\"#17313a\" stroke-width=\"2\"/><polygon points=\"342,14 360,25 342,36\" fill=\"#fff\" stroke=\"#17313a\" stroke-width=\"2\"/><g stroke=\"#17313a\" stroke-width=\"2\" stroke-dasharray=\"3,3\"><line x1=\"57.5\" y1=\"38\" x2=\"57.5\" y2=\"55\"/><line x1=\"360\" y1=\"38\" x2=\"360\" y2=\"55\"/></g></svg>","D17":"<svg viewBox=\"0 0 200 146\" width=\"200\" height=\"146\" aria-label=\"A cube net shaped like a cross. A row of four faces shows 1, 2, 4 and 5 dots from left to right. A face with 3 dots sits above the second face in the row, and a face with 6 dots sits below it\"><rect x=\"10\" y=\"50\" width=\"44\" height=\"44\" fill=\"#fff\" stroke=\"#17313a\" stroke-width=\"2\"/><circle cx=\"32\" cy=\"72\" r=\"3.2\" fill=\"#17313a\"/><rect x=\"54\" y=\"50\" width=\"44\" height=\"44\" fill=\"#fff\" stroke=\"#17313a\" stroke-width=\"2\"/><circle cx=\"66.32\" cy=\"62.32\" r=\"3.2\" fill=\"#17313a\"/><circle cx=\"85.68\" cy=\"81.68\" r=\"3.2\" fill=\"#17313a\"/><rect x=\"98\" y=\"50\" width=\"44\" height=\"44\" fill=\"#fff\" stroke=\"#17313a\" stroke-width=\"2\"/><circle cx=\"110.32\" cy=\"62.32\" r=\"3.2\" fill=\"#17313a\"/><circle cx=\"129.68\" cy=\"62.32\" r=\"3.2\" fill=\"#17313a\"/><circle cx=\"110.32\" cy=\"81.68\" r=\"3.2\" fill=\"#17313a\"/><circle cx=\"129.68\" cy=\"81.68\" r=\"3.2\" fill=\"#17313a\"/><rect x=\"142\" y=\"50\" width=\"44\" height=\"44\" fill=\"#fff\" stroke=\"#17313a\" stroke-width=\"2\"/><circle cx=\"154.32\" cy=\"62.32\" r=\"3.2\" fill=\"#17313a\"/><circle cx=\"173.68\" cy=\"62.32\" r=\"3.2\" fill=\"#17313a\"/><circle cx=\"164\" cy=\"72\" r=\"3.2\" fill=\"#17313a\"/><circle cx=\"154.32\" cy=\"81.68\" r=\"3.2\" fill=\"#17313a\"/><circle cx=\"173.68\" cy=\"81.68\" r=\"3.2\" fill=\"#17313a\"/><rect x=\"54\" y=\"6\" width=\"44\" height=\"44\" fill=\"#fff\" stroke=\"#17313a\" stroke-width=\"2\"/><circle cx=\"66.32\" cy=\"18.32\" r=\"3.2\" fill=\"#17313a\"/><circle cx=\"76\" cy=\"28\" r=\"3.2\" fill=\"#17313a\"/><circle cx=\"85.68\" cy=\"37.68\" r=\"3.2\" fill=\"#17313a\"/><rect x=\"54\" y=\"94\" width=\"44\" height=\"44\" fill=\"#fff\" stroke=\"#17313a\" stroke-width=\"2\"/><circle cx=\"68.08\" cy=\"103.68\" r=\"3.2\" fill=\"#17313a\"/><circle cx=\"83.92\" cy=\"103.68\" r=\"3.2\" fill=\"#17313a\"/><circle cx=\"68.08\" cy=\"116\" r=\"3.2\" fill=\"#17313a\"/><circle cx=\"83.92\" cy=\"116\" r=\"3.2\" fill=\"#17313a\"/><circle cx=\"68.08\" cy=\"128.32\" r=\"3.2\" fill=\"#17313a\"/><circle cx=\"83.92\" cy=\"128.32\" r=\"3.2\" fill=\"#17313a\"/></svg>","D23":"<svg viewBox=\"0 0 265 172\" width=\"265\" height=\"172\" aria-label=\"A 9 cm by 6 cm rectangle with a 2 cm by 2 cm square notch cut out of the middle of its top edge\"><polygon points=\"20,40 90,40 90,80 130,80 130,40 200,40 200,160 20,160\" fill=\"#e4edeb\" stroke=\"#17313a\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"110\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" fill=\"#17313a\">2 cm</text><text x=\"212\" y=\"105\" font-size=\"15\" fill=\"#17313a\">6 cm</text><text x=\"110\" y=\"148\" text-anchor=\"middle\" font-size=\"15\" fill=\"#17313a\">9 cm</text></svg>","D25":"<svg viewBox=\"0 0 260 165\" width=\"260\" height=\"165\" aria-label=\"A triangle with a circle at each corner and a circle halfway along each side, six circles in all\"><polygon points=\"130,22 20,142 240,142\" fill=\"none\" stroke=\"#17313a\" stroke-width=\"2.5\"/><g fill=\"#fff\" stroke=\"#17313a\" stroke-width=\"2.5\"><circle cx=\"130\" cy=\"22\" r=\"13\"/><circle cx=\"20\" cy=\"142\" r=\"13\"/><circle cx=\"240\" cy=\"142\" r=\"13\"/><circle cx=\"75\" cy=\"82\" r=\"13\"/><circle cx=\"185\" cy=\"82\" r=\"13\"/><circle cx=\"130\" cy=\"142\" r=\"13\"/></g></svg>"};
+  var LETTERS = ['A', 'B', 'C', 'D'];
+  var QUIZ_NAMES = { A: 'Quiz A', B: 'Quiz B', C: 'Quiz C', D: 'Quiz D' };
+  var PRAISE = ['Correct!', 'Nice one!', 'You got it!', 'Brilliant!', 'Spot on!', 'Yes!', 'Excellent!', 'Great thinking!'];
+  var CONSOLE = ['Not quite.', 'Close, but no.', 'Oops!', 'Not this time.', 'Good try!'];
+
+  function $(id) { return document.getElementById(id); }
+  function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+
+  /* ---------- storage (best effort) ---------- */
+  var store = {
+    get: function (k) { try { return window.localStorage.getItem('g4math.' + k); } catch (e) { return null; } },
+    set: function (k, v) { try { window.localStorage.setItem('g4math.' + k, String(v)); } catch (e) {} }
+  };
+
+  /* ---------- sound (synthesised, no files) ---------- */
+  var Sound = {
+    on: store.get('sound') !== 'off',
+    ctx: null,
+    ensure: function () {
+      if (this.ctx) { if (this.ctx.state === 'suspended' && this.ctx.resume) { this.ctx.resume(); } return true; }
+      var AC = window.AudioContext || window.webkitAudioContext;
+      if (!AC) { return false; }
+      try { this.ctx = new AC(); } catch (e) { return false; }
+      return true;
+    },
+    tone: function (freq, start, dur, type, vol) {
+      var c = this.ctx, t = c.currentTime + start;
+      var o = c.createOscillator(), g = c.createGain();
+      o.type = type || 'sine'; o.frequency.value = freq;
+      g.gain.setValueAtTime(0.0001, t);
+      g.gain.exponentialRampToValueAtTime(vol || 0.25, t + 0.01);
+      g.gain.exponentialRampToValueAtTime(0.0001, t + dur);
+      o.connect(g); g.connect(c.destination);
+      o.start(t); o.stop(t + dur + 0.05);
+    },
+    play: function (name) {
+      if (!this.on || !this.ensure()) { return; }
+      try {
+        if (name === 'right') { this.tone(659, 0, 0.18, 'triangle', 0.3); this.tone(880, 0.12, 0.28, 'triangle', 0.3); }
+        else if (name === 'wrong') { this.tone(220, 0, 0.22, 'sawtooth', 0.12); this.tone(185, 0.18, 0.3, 'sawtooth', 0.12); }
+        else if (name === 'tick') { this.tone(520, 0, 0.06, 'square', 0.05); }
+        else if (name === 'streak') { this.tone(784, 0, 0.1, 'triangle', 0.25); this.tone(988, 0.1, 0.1, 'triangle', 0.25); this.tone(1319, 0.2, 0.3, 'triangle', 0.25); }
+        else if (name === 'fanfare') { var n = [523, 659, 784, 1047, 784, 1047]; for (var i = 0; i < n.length; i++) { this.tone(n[i], i * 0.13, 0.25, 'triangle', 0.28); } }
+        else if (name === 'done') { this.tone(440, 0, 0.2, 'triangle', 0.25); this.tone(554, 0.18, 0.2, 'triangle', 0.25); this.tone(659, 0.36, 0.4, 'triangle', 0.25); }
+      } catch (e) {}
+    },
+    toggle: function () { this.on = !this.on; store.set('sound', this.on ? 'on' : 'off'); this.paint(); if (this.on) { this.play('tick'); } },
+    paint: function () {
+      var ids = ['soundMenu', 'soundQuiz'];
+      for (var i = 0; i < ids.length; i++) {
+        var b = $(ids[i]); if (!b) { continue; }
+        b.innerHTML = this.on ? '&#128266;' : '&#128263;';
+        b.className = b.className.replace(/ ?\boff\b/, '') + (this.on ? '' : ' off');
+        b.setAttribute('aria-label', this.on ? 'Sound on. Click to turn off' : 'Sound off. Click to turn on');
+      }
+    }
+  };
+
+  /* ---------- state ---------- */
+  var S = { quiz: null, order: [], idx: 0, right: 0, wrong: 0, streak: 0, bestStreak: 0, answers: [], started: 0, answered: false, finished: true, timerId: null };
+
+  function shuffle(a) { for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+  var confettiRun = 0;
+  function show(id) {
+    var views = ['menu', 'quiz', 'result'];
+    for (var i = 0; i < views.length; i++) { $(views[i]).className = (views[i] === id) ? '' : 'hidden'; }
+    if (id !== 'result') { confettiRun++; $('confetti').className = 'hidden'; }
+    window.scrollTo(0, 0);
+  }
+  function setText(id, t) { $(id).innerHTML = t; }
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+  function fmtTime(ms) { var s = Math.floor(ms / 1000); return Math.floor(s / 60) + ':' + pad(s % 60); }
+
+  /* ---------- menu ---------- */
+  function paintMenu() {
+    var html = '', cls = { A: 'qa', B: 'qb', C: 'qc', D: 'qd' };
+    for (var i = 0; i < LETTERS.length; i++) {
+      var k = LETTERS[i], best = store.get('best.' + k), bestHtml;
+      if (best === null) { bestHtml = '<span class="best none">Not played yet</span>'; }
+      else if (parseInt(best, 10) === 25) { bestHtml = '<span class="best perfect">&#11088; Best: 25/25</span>'; }
+      else { bestHtml = '<span class="best">Best: ' + esc(best) + '/25</span>'; }
+      html += '<button type="button" class="card ' + cls[k] + '" data-quiz="' + k + '">' +
+        '<span class="badge">' + k + '</span>' +
+        '<span class="title">' + QUIZ_NAMES[k] + '</span>' +
+        '<span class="sub">25 questions &middot; practice contest ' + k + '</span>' +
+        bestHtml + '</button>';
+    }
+    $('cards').innerHTML = html;
+    var cards = $('cards').getElementsByTagName('button');
+    for (var j = 0; j < cards.length; j++) {
+      cards[j].onclick = function () { Sound.ensure(); startQuiz(this.getAttribute('data-quiz')); };
+    }
+    $('shuffle').checked = store.get('shuffle') === 'on';
+  }
+
+  /* ---------- quiz ---------- */
+  function startQuiz(k) {
+    S.quiz = k; S.idx = 0; S.right = 0; S.wrong = 0; S.streak = 0; S.bestStreak = 0; S.answers = []; S.finished = false;
+    S.order = [];
+    for (var i = 0; i < 25; i++) { S.order.push(i); }
+    if ($('shuffle').checked) { shuffle(S.order); }
+    S.started = new Date().getTime();
+    setText('quizLabel', QUIZ_NAMES[k]);
+    buildMeter();
+    paintTally();
+    if (S.timerId) { clearInterval(S.timerId); }
+    S.timerId = setInterval(tick, 1000); tick();
+    show('quiz');
+    paintQuestion();
+  }
+  function tick() { if (!S.finished) { setText('timer', fmtTime(new Date().getTime() - S.started)); } }
+
+  function buildMeter() {
+    var m = $('meter'), html = '', narrow = isNarrow();
+    for (var i = 0; i < 25; i++) {
+      // cell 0 sits at the bottom (or left) and fills upward
+      var pct = (i * 4) + '%', size = 'calc(4% - 2px)';
+      if (narrow) { html += '<div class="cell" id="cell' + i + '" style="left:' + pct + ';width:' + size + ';margin-left:1px"></div>'; }
+      else { html += '<div class="cell" id="cell' + i + '" style="bottom:' + pct + ';height:' + size + ';margin-bottom:1px"></div>'; }
+    }
+    m.innerHTML = html;
+    for (var j = 0; j < S.answers.length; j++) { lightCell(j, S.answers[j].ok, false); }
+  }
+  function isNarrow() { return (window.innerWidth || document.documentElement.clientWidth) <= 720; }
+  var lastNarrow = isNarrow();
+  window.onresize = function () { var n = isNarrow(); if (n !== lastNarrow) { lastNarrow = n; if (!$('quiz').className) { buildMeter(); } } };
+
+  function lightCell(i, ok, flash) {
+    var c = $('cell' + i); if (!c) { return; }
+    c.className = 'cell ' + (ok ? 'on-right' : 'on-wrong') + (flash ? ' flash' : '');
+  }
+  function paintTally() {
+    setText('nRight', S.right); setText('nWrong', S.wrong); setText('nTogo', 25 - S.right - S.wrong);
+    var st = $('streak'); st.innerHTML = 'Streak: ' + S.streak + (S.streak >= 3 ? ' &#128293;' : '');
+    st.className = 'streak' + (S.streak >= 3 ? ' hot' : '');
+    setText('nStreakSmall', S.streak + (S.streak >= 3 ? '&#128293;' : ''));
+  }
+
+  function current() { return DATA[S.quiz][S.order[S.idx]]; }
+
+  function tableHtml(t) {
+    var h = '<table class="qtab"><tr>';
+    for (var i = 0; i < t.h.length; i++) { h += '<th>' + esc(t.h[i]) + '</th>'; }
+    h += '</tr>';
+    for (var r = 0; r < t.r.length; r++) {
+      h += '<tr>';
+      for (var c = 0; c < t.r[r].length; c++) { h += '<td>' + esc(t.r[r][c]) + '</td>'; }
+      h += '</tr>';
+    }
+    return h + '</table>';
+  }
+  function bodyHtml(q) {
+    var h = '';
+    if (q.table) { h += tableHtml(q.table); }
+    if (q.fig && FIGS[q.fig]) { h += '<div class="fig">' + FIGS[q.fig] + '</div>'; }
+    return h;
+  }
+
+  function paintQuestion() {
+    var q = current();
+    S.answered = false;
+    setText('qcount', 'Question ' + (S.idx + 1) + ' of 25' + ($('shuffle').checked ? ' <span style="color:#8a9b9f;font-weight:600;letter-spacing:0;text-transform:none">(booklet no. ' + q.n + ')</span>' : ''));
+    setText('qtext', esc(q.q));
+    setText('qbody', bodyHtml(q));
+    var html = '';
+    for (var i = 0; i < 4; i++) {
+      html += '<button type="button" class="ans" data-i="' + i + '"><span class="letter">' + LETTERS[i] + '</span>' + esc(q.o[i]) + '</button>';
+    }
+    $('answers').innerHTML = html;
+    var btns = $('answers').getElementsByTagName('button');
+    for (var j = 0; j < btns.length; j++) { btns[j].onclick = function () { answer(parseInt(this.getAttribute('data-i'), 10)); }; }
+    $('feedback').innerHTML = '';
+    $('nextBtn').className = 'next hidden';
+    $('nextBtn').innerHTML = (S.idx === 24) ? 'See my score &rarr;' : 'Next question &rarr;';
+    setText('live', 'Question ' + (S.idx + 1) + '. ' + q.q);
+    window.scrollTo(0, 0);
+  }
+
+  function answer(i) {
+    if (S.answered) { return; }
+    S.answered = true;
+    var q = current(), correct = LETTERS.indexOf(q.a), ok = (i === correct);
+    var btns = $('answers').getElementsByTagName('button');
+    for (var j = 0; j < btns.length; j++) {
+      btns[j].disabled = true;
+      if (j === i) { btns[j].className = 'ans ' + (ok ? 'right' : 'wrong'); }
+      else if (j === correct) { btns[j].className = 'ans reveal'; }
+      else { btns[j].className = 'ans dim'; }
+    }
+    S.answers.push({ pos: S.idx, q: q, picked: i, ok: ok });
+    if (ok) { S.right++; S.streak++; if (S.streak > S.bestStreak) { S.bestStreak = S.streak; } }
+    else { S.wrong++; S.streak = 0; }
+    lightCell(S.idx, ok, true);
+    paintTally();
+    var fb = $('feedback'), head;
+    if (ok) {
+      head = PRAISE[Math.floor(Math.random() * PRAISE.length)];
+      if (S.streak >= 3 && S.streak % 3 === 0) { head += ' &nbsp;' + S.streak + ' in a row! &#128293;'; Sound.play('streak'); } else { Sound.play('right'); }
+      fb.innerHTML = '<div class="feedback ok"><span class="big">&#10004; ' + head + '</span><span class="expl">' + esc(q.e) + '</span></div>';
+    } else {
+      head = CONSOLE[Math.floor(Math.random() * CONSOLE.length)];
+      Sound.play('wrong');
+      fb.innerHTML = '<div class="feedback no"><span class="big">&#10008; ' + head + ' The answer is ' + q.a + ': ' + esc(q.o[correct]) + '</span><span class="expl">' + esc(q.e) + '</span></div>';
+    }
+    setText('live', (ok ? 'Correct. ' : 'Wrong. The answer is ' + q.a + '. ') + q.e);
+    $('nextBtn').className = 'next';
+    // keep the Next button in view on small screens
+    try { if (isNarrow()) { $('nextBtn').scrollIntoView(false); } } catch (e) {}
+  }
+
+  function next() {
+    if (!S.answered) { return; }
+    Sound.play('tick');
+    if (S.idx === 24) { finish(); return; }
+    S.idx++;
+    paintQuestion();
+  }
+
+  /* ---------- results ---------- */
+  function finish() {
+    S.finished = true;
+    if (S.timerId) { clearInterval(S.timerId); S.timerId = null; }
+    var ms = new Date().getTime() - S.started;
+    var score = S.right, k = S.quiz;
+    var prev = store.get('best.' + k), isBest = (prev === null || score > parseInt(prev, 10));
+    if (isBest) { store.set('best.' + k, score); }
+    setText('resLabel', QUIZ_NAMES[k] + ' finished');
+    setText('resScore', score);
+    var stars = (score === 25) ? 5 : (score >= 20) ? 4 : (score >= 15) ? 3 : (score >= 10) ? 2 : (score >= 5) ? 1 : 0, sh = '';
+    for (var i = 0; i < 5; i++) { sh += '<span class="' + (i < stars ? 'lit' : 'unlit') + '">&#9733;</span>'; }
+    setText('resStars', sh);
+    var msg = (score === 25) ? 'PERFECT SCORE! &#127881;' : (score >= 20) ? 'Excellent work!' : (score >= 15) ? 'Great job!' : (score >= 10) ? 'Good effort!' : 'Keep practising!';
+    setText('resMsg', msg);
+    var detail = 'Time: ' + fmtTime(ms) + ' (the real contest allows 45 minutes). Best streak: ' + S.bestStreak + ' in a row.';
+    if (isBest && prev !== null) { detail += ' &#127942; New best score for ' + QUIZ_NAMES[k] + '!'; }
+    else if (prev !== null) { detail += ' Your best for ' + QUIZ_NAMES[k] + ' is ' + esc(prev) + '/25.'; }
+    setText('resDetail', detail);
+    // review of missed questions
+    var missed = [], rv = '';
+    for (var j = 0; j < S.answers.length; j++) { if (!S.answers[j].ok) { missed.push(S.answers[j]); } }
+    missed.sort(function (a, b) { return a.q.n - b.q.n; });
+    if (missed.length === 0) { rv = '<div class="allright">You answered every question correctly. Nothing to review!</div>'; }
+    else {
+      rv = '<h3>Questions to look at again (' + missed.length + ')</h3>';
+      for (var m = 0; m < missed.length; m++) {
+        var a = missed[m], q = a.q, ci = LETTERS.indexOf(q.a);
+        rv += '<div class="rv"><span class="qn">Question ' + q.n + '.</span> ' + esc(q.q) + bodyHtml(q) +
+          '<div><span class="you">You chose ' + LETTERS[a.picked] + ': ' + esc(q.o[a.picked]) + '</span> &nbsp;&middot;&nbsp; <span class="cor">Answer ' + q.a + ': ' + esc(q.o[ci]) + '</span></div>' +
+          '<div class="ex">' + esc(q.e) + '</div></div>';
+      }
+    }
+    $('review').innerHTML = rv;
+    show('result');
+    if (score >= 20) { Sound.play('fanfare'); confetti(score === 25 ? 220 : 120); } else { Sound.play('done'); }
+  }
+
+  /* ---------- confetti ---------- */
+  function confetti(count) {
+    var cv = $('confetti'); if (!cv.getContext) { return; }
+    var ctx = cv.getContext('2d');
+    cv.width = window.innerWidth; cv.height = window.innerHeight; cv.className = '';
+    var colours = ['#2b6a62', '#f5a623', '#d9752b', '#3f6fb5', '#a53d6e', '#2fbf6c', '#e85a4f'];
+    var bits = [], i;
+    for (i = 0; i < count; i++) {
+      bits.push({ x: Math.random() * cv.width, y: -20 - Math.random() * cv.height * 0.5, w: 6 + Math.random() * 6, h: 8 + Math.random() * 8,
+        vx: (Math.random() - 0.5) * 2, vy: 2 + Math.random() * 3, r: Math.random() * Math.PI, vr: (Math.random() - 0.5) * 0.2, c: colours[i % colours.length] });
+    }
+    var start = new Date().getTime(), myRun = ++confettiRun;
+    var raf = window.requestAnimationFrame || function (f) { return setTimeout(f, 16); };
+    function frame() {
+      if (myRun !== confettiRun) { return; }
+      var t = new Date().getTime() - start;
+      ctx.clearRect(0, 0, cv.width, cv.height);
+      var alive = false;
+      for (var j = 0; j < bits.length; j++) {
+        var b = bits[j]; b.x += b.vx; b.y += b.vy; b.r += b.vr;
+        if (b.y < cv.height + 20) { alive = true; }
+        ctx.save(); ctx.translate(b.x, b.y); ctx.rotate(b.r); ctx.fillStyle = b.c; ctx.fillRect(-b.w / 2, -b.h / 2, b.w, b.h); ctx.restore();
+      }
+      if (alive && t < 6000) { raf(frame); } else { ctx.clearRect(0, 0, cv.width, cv.height); cv.className = 'hidden'; }
+    }
+    raf(frame);
+  }
+
+  /* ---------- navigation & keys ---------- */
+  function goMenu(confirmFirst) {
+    if (confirmFirst && !S.finished && S.answers.length > 0 && S.answers.length < 25) {
+      if (!window.confirm('Leave this quiz? Your progress will be lost.')) { return; }
+    }
+    S.finished = true;
+    if (S.timerId) { clearInterval(S.timerId); S.timerId = null; }
+    paintMenu();
+    show('menu');
+  }
+  $('backBtn').onclick = function () { goMenu(true); };
+  $('nextBtn').onclick = next;
+  $('againBtn').onclick = function () { Sound.ensure(); startQuiz(S.quiz); };
+  $('menuBtn').onclick = function () { goMenu(false); };
+  $('soundMenu').onclick = function () { Sound.ensure(); Sound.toggle(); };
+  $('soundQuiz').onclick = function () { Sound.ensure(); Sound.toggle(); };
+  $('shuffle').onchange = function () { store.set('shuffle', this.checked ? 'on' : 'off'); };
+
+  document.onkeydown = function (ev) {
+    ev = ev || window.event;
+    if (ev.metaKey || ev.ctrlKey || ev.altKey) { return; }
+    var code = ev.keyCode || ev.which || 0;
+    var ch = (ev.key && ev.key.length === 1) ? ev.key.toUpperCase() : String.fromCharCode(code).toUpperCase();
+    var isNext = (ev.key === 'Enter' || ev.key === ' ' || ev.key === 'Spacebar' || ev.key === 'ArrowRight' || code === 13 || code === 32 || code === 39);
+    var inQuiz = !$('quiz').className, inMenu = !$('menu').className, inResult = !$('result').className;
+    if (inQuiz) {
+      var idx = LETTERS.indexOf(ch);
+      if (idx < 0 && /^[1-4]$/.test(ch)) { idx = parseInt(ch, 10) - 1; }
+      if (idx >= 0 && !S.answered) { answer(idx); return; }
+      if (isNext && S.answered) { if (ev.preventDefault) { ev.preventDefault(); } next(); }
+    } else if (inMenu) {
+      if (LETTERS.indexOf(ch) >= 0 && document.activeElement !== $('shuffle')) { Sound.ensure(); startQuiz(ch); }
+    } else if (inResult) {
+      if (ev.key === 'Enter' || code === 13) { Sound.ensure(); startQuiz(S.quiz); }
+    }
+  };
+  // visible focus ring only for keyboard users
+  document.onfocusin = function (ev) { var t = (ev || window.event).target; if (t && t.tagName === 'BUTTON' && usingKeys) { t.className += ' btn-focus'; } };
+  document.onfocusout = function (ev) { var t = (ev || window.event).target; if (t && t.className) { t.className = t.className.replace(/ ?\bbtn-focus\b/, ''); } };
+  var usingKeys = false;
+  document.onmousedown = function () { usingKeys = false; };
+  document.onkeyup = function () { usingKeys = true; };
+
+  window.onbeforeunload = function (ev) {
+    if (!S.finished && S.answers.length > 0 && S.answers.length < 25) {
+      var msg = 'You are in the middle of a quiz.';
+      if (ev) { ev.returnValue = msg; }
+      return msg;
+    }
+  };
+
+  /* ---------- go ---------- */
+  Sound.paint();
+  paintMenu();
+})();
+</script>
+</body>
+</html>
